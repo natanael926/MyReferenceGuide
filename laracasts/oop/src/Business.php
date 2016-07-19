@@ -21,6 +21,6 @@ class Business
 
     public function getStaffMembers()
     {
-        $this->staff->members();
+        return $this->staff->members();
     }
 }
