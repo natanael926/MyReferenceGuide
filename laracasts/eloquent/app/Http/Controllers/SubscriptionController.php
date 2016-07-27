@@ -2,20 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers;
+use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller 
 {
 
-	/**
-	 * Create a new controller instance
-	 * 
-	 * @return void
-	 */
-	public function __construct()
-	{
-
-	}
 
 	public function index() 
 	{
@@ -25,6 +17,11 @@ class SubscriptionController extends Controller
 	public function show(int $id)
 	{
 		dd($id);
+	}
+
+	public function store(Request $request)
+	{
+		dd($request->all());
 	}
 
 }
